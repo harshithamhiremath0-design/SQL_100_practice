@@ -42,3 +42,53 @@ SELECT * FROM student;
 # Q10. Display all students
 SELECT * FROM student;
 
+# Day 2
+
+# Q11. Display only name and marks
+SELECT name, marks
+FROM student;
+
+# Q12. Students scoring more than 80
+SELECT *
+FROM student
+WHERE marks > 80;
+
+# Q13. Students from Mumbai
+SELECT *
+FROM student
+WHERE city = 'Mumbai';
+
+# Q14. Marks > 80 AND city is Mumbai
+SELECT *
+FROM student
+WHERE marks > 80 AND city = 'Mumbai';
+
+# Q15. Marks > 90 OR city is Delhi
+SELECT *
+FROM student
+WHERE marks > 90 OR city = 'Delhi';
+
+#Q16. Marks between 70 and 90
+SELECT *
+FROM student
+WHERE marks BETWEEN 70 AND 90;
+
+#Q17. Students from Delhi or Mumbai
+SELECT *
+FROM student
+WHERE city IN ('Delhi','Mumbai');
+
+# Q18. Name starts with A
+SELECT *
+FROM student
+WHERE name LIKE 'A%';
+
+# Q19. Students NOT from Delhi
+SELECT *
+FROM student
+WHERE NOT city = 'Delhi';
+
+# Q20. Sort by highest marks
+SELECT *
+FROM student
+ORDER BY marks DESC;
